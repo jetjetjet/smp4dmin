@@ -31,9 +31,9 @@
                                            <li class="<?php if($this->uri->segment(1) == "User" || $this->uri->segment(1) == "Pengaturan" || $this->uri->segment(1) == "Pengaturan"){echo "active";}?>">
                                                 <a role="button" tabindex="0"><i class="fa fa-envelope-o"></i> <span>Pengaturan</span> </a>
                                                 <ul>
-                                                    <li><a href="<?php echo site_url('User/index');?>"><i class="fa fa-caret-right"></i> User</a></li>
-                                                    <li><a href="<?php echo site_url('Pengaturan/Sambutan');?>"><i class="fa fa-caret-right"></i>Sambutan Kepala Sekolah</a></li>
-                                                    <li><a href="<?php echo site_url('Pengaturan/Identitas');?>"><i class="fa fa-caret-right"></i>Identitas Sekolah</a></li>
+                                                    <li class="<?php if($this->uri->segment(2) == "index"){echo "active";}?>"><a href="<?php echo site_url('User/index');?>"><i class="fa fa-caret-right"></i> User</a></li>
+                                                    <li class="<?php if($this->uri->segment(2) == "Sambutan"){echo "active";}?>"><a href="<?php echo site_url('Pengaturan/Sambutan');?>"><i class="fa fa-caret-right"></i>Sambutan Kepala Sekolah</a></li>
+                                                    <li class="<?php if($this->uri->segment(2) == "Identitas"){echo "active";}?>"><a href="<?php echo site_url('Pengaturan/Identitas');?>"><i class="fa fa-caret-right"></i>Identitas Sekolah</a></li>
                                                 </ul>
                                             </li>
                                             

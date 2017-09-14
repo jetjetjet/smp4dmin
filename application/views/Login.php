@@ -29,6 +29,7 @@
 
         <!-- project main css files -->
         <link rel="stylesheet" href="<?php echo base_url();?>assets/css/main.css">
+        <link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/js/vendor/sweetalert/dist/sweetalert.css">
         <!--/ stylesheets -->
 
 
@@ -147,6 +148,7 @@
         <script src="<?php echo base_url();?>assets/js/vendor/animsition/js/jquery.animsition.min.js"></script>
 
         <script src="<?php echo base_url();?>assets/js/vendor/screenfull/screenfull.min.js"></script>
+        <script src="<?=base_url();?>assets/js/vendor/sweetalert/dist/sweetalert.min.js"></script>
         <!--/ vendor javascripts -->
 
 
@@ -171,6 +173,34 @@
 
 
             });
+        </script>
+
+        <script type="text/javascript"> 
+            // $('#login').on("click", function(e) {
+            //     e.preventDefault();
+            //     var url = $(this).attr('href');
+            //     console.log(url)
+            //     swal({
+            //         title: "Está seguro?",
+            //         text: "No podrá recuperar el cliente una vez sea eliminado!",
+            //         type: "warning",
+            //         showCancelButton: true,
+            //         confirmButtonColor: '#DD6B55',
+            //         confirmButtonText: 'Si, Eliminarlo!',
+            //         cancelButtonText: "No, Cancelar!",
+            //         confirmButtonClass: "btn-danger",
+            //         closeOnConfirm: false,
+            //         closeOnCancel: false
+            //     },
+            //     function(isConfirm) {
+            //         if (isConfirm) {
+            //             swal("Eliminado!", "Su cliente ha sido eliminado!", "success");
+            //             window.location.replace(url);
+            //         } else {
+            //             swal("Cancelado", "Su cliente está a salvo! :)", "error");
+            //         }
+            //     });
+            // });
         </script>
         <!--/ Page Specific Scripts -->
 
